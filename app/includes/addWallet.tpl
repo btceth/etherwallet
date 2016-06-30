@@ -3,7 +3,7 @@
 
   <section class="row" id="walletselection">
     <article class="col-md-4 col-sm-6">
-      <h4> What would you like to do? </h4>
+      <h4> What would you like to do?你要进行什么操作？ </h4>
       <div class="radio">
         <label>
           <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="gennewwallet">Generate New Wallet</label>
