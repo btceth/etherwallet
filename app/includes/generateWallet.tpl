@@ -1,7 +1,7 @@
 <section class="tab-pane active" ng-if="globalService.currentTab==globalService.tabs.generateWallet.id" ng-controller='walletGenCtrl'>
 
   <!-- Top -->
-  <h2> Generate Wallet </h2>
+  <h2> Generate Wallet生成钱包 </h2>
 
   @@if (site === 'mew' ) {
     <p>We removed the <a ng-click="globalService.currentTab=globalService.tabs.bulkGenerate.id"> Bulk Generate tab </a> from the nav as it wasn't very widely used, but feel free to still use it if you want.</p>
@@ -12,7 +12,7 @@
       <div class="form-group">
         <h4>Enter a strong password <small> (at least 9 characters)</small> </h4>
         <div class="input-group">
-          <input type="{{showPass && 'password' || 'text'}}" class="form-control" placeholder="Don't forget to save this!" ng-model="password" ng-class="isStrongPass() ? 'valid' : 'invalid'"/>
+          <input type="{{showPass && 'password' || 'text'}}" class="form-control" placeholder="Don't forget to save this!不要忘记保存！" ng-model="password" ng-class="isStrongPass() ? 'valid' : 'invalid'"/>
           <span class="input-group-addon eye" ng-click="showPass=!showPass"></span>
         </div>
       </div>
@@ -38,7 +38,7 @@
     <!-- / 0. Warning -->
 
     <!-- 1. Private Keys -->
-    <h4> 1. Save your Keystore/JSON or Private Key. Don't forget your password above. </h4>
+    <h4> 1. Save your Keystore/JSON or Private Key. Don't forget your password above.1.保存你的Keystore/JSON或者私钥。不要忘记秘密。 </h4>
     <div class="row">
       <div class="col-sm-6">
         <div class="form-group">
