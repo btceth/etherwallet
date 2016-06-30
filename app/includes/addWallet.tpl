@@ -6,28 +6,28 @@
       <h4> What would you like to do?你要进行什么操作？ </h4>
       <div class="radio">
         <label>
-          <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="gennewwallet">Generate New Wallet</label>
+          <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="gennewwallet">Generate New Wallet生成新钱包</label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="fileupload">Select Your Wallet File <small>(Keystore / JSON)</small></label>
+          <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="fileupload">Select Your Wallet File选择你的钱包文件 <small>(Keystore / JSON)</small></label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="pasteprivkey">Paste/Type Your Private Key</label>
+          <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="pasteprivkey">Paste/Type Your Private Key粘贴/输入你的私钥</label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="watchonlyaccount">Add an Account to Watch</label>
+          <input type="radio" name="typeOfKeyRadio" ng-model="walletType" value="watchonlyaccount">Add an Account to Watch 添加一个要查看的账户</label>
       </div>
     </article>
 
     <article class="col-md-4 col-sm-6">
       <!-- Generate New Wallet -->
       <div ng-show="walletType=='gennewwallet'" ng-init="showPass=true">
-        <h4> Generate New Wallet: </h4>
+        <h4> Generate New Wallet:生成新钱包： </h4>
         <div class="form-group">
-          <label> Create a Nickname: </label>
+          <label> Create a Nickname: 生成一个昵称：</label>
           <input class="form-control" type="text" placeholder="My New Wallet" ng-model="addAccount.nickName" ng-change="newWalletChange('nickNameStatus','showBtnGen')"/>
         </div>
         <div class="form-group">
@@ -42,14 +42,14 @@
 
       <!-- Select Your Wallet File -->
       <div ng-show="walletType=='fileupload'">
-        <h4>Select your Wallet File: </h4>
+        <h4>Select your Wallet File:选择你的钱包文件： </h4>
         <div class="form-group">
           <input style="display:none;" type="file" on-read-file="showContent($fileContent)" id="fselector"/>
           <a class="file-input btn btn-block btn-default btn-file marg-v-sm" ng-click="openFileDialog()">SELECT WALLET FILE... </a>
           <div id="fuploadStatus" ng-bind-html="fileStatus"></div>
         </div>
         <div class="form-group" ng-show="requireFPass">
-          <p> Your file is encrypted. Please enter the password: </p>
+          <p> Your file is encrypted. Please enter the password:你的文件被加密了。请输入密码： </p>
           <input class="form-control" type="password" placeholder="Password" ng-model="filePassword" ng-change="onFilePassChange()" />
         </div>
       </div>
@@ -68,7 +68,7 @@
 
       <!-- Add an Account to Watch -->
       <div ng-show="walletType=='watchonlyaccount'">
-        <h4> Add an Account to Watch: </h4>
+        <h4> Add an Account to Watch: 添加一个要查看的账户</h4>
         <p class="text-danger">You can add any account to "watch" on the wallets tab without uploading a private key. This does <strong> not </strong> mean you have access to this wallet, nor can you transfer Ether from it. </p>
         <div class="form-group">
           <label> Create a Nickname: </label>
