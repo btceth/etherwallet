@@ -69,13 +69,13 @@
       <!-- Add an Account to Watch -->
       <div ng-show="walletType=='watchonlyaccount'">
         <h4> Add an Account to Watch: 添加一个要查看的账户</h4>
-        <p class="text-danger">You can add any account to "watch" on the wallets tab without uploading a private key. This does <strong> not </strong> mean you have access to this wallet, nor can you transfer Ether from it. </p>
+        <p class="text-danger">You can add any account to "watch" on the wallets tab without uploading a private key. This does <strong> not </strong> mean you have access to this wallet, nor can you transfer Ether from it.你无需上传私钥，就可以在钱包标签中添加任何想要查看的账户。这不意味着你可以使用钱包或者发送以太币。 </p>
         <div class="form-group">
-          <label> Create a Nickname: </label>
+          <label> Create a Nickname:创建一个昵称 </label>
           <input class="form-control" type="text" placeholder="My New Wallet" ng-model="addAccount.nickName" ng-change="watchOnlyChange()"/>
         </div>
         <div class="form-group">
-          <label> Enter the Address: </label>
+          <label> Enter the Address: 输入地址</label>
           <input class="form-control" type="text" placeholder="0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8" ng-model="addAccount.address" ng-change="watchOnlyChange()"/>
         </div>
       </div>
@@ -84,15 +84,15 @@
 
     <article class="col-md-4 col-sm-6" >
         <div ng-show="showBtnGen">
-        <h4> Generate Wallet </h4>
+        <h4> Generate Wallet生成钱包 </h4>
         <div class="form-group"><a ng-click="generateWallet()" class="btn btn-primary btn-block">GENERATE</a></div>
         </div>
         <div ng-show="showBtnUnlock">
         <h4> Access your Wallet </h4>
-        <div class="form-group"><a ng-click="decryptWallet()" class="btn btn-primary btn-block">UNLOCK WALLET</a></div>
+        <div class="form-group"><a ng-click="decryptWallet()" class="btn btn-primary btn-block">UNLOCK WALLET解锁钱包</a></div>
         </div>
         <div ng-show="showBtnAdd">
-        <h4> Add Account </h4>
+        <h4> Add Account添加账户 </h4>
         <div class="form-group"><a ng-click="addWatchOnly()" class="btn btn-primary btn-block">ADD</a></div>
         </div>
         <div ng-bind-html="addWalletStats"></div>
@@ -103,7 +103,7 @@
   <article class="row" ng-if="showAddWallet">
     <hr />
     <div class="col-sm-4">
-      <h4> Account Information </h4>
+      <h4> Account Information账户信息 </h4>
       <div>
         <div id="addressIdenticon" title="Address Indenticon" blockie-address="{{wallet.getAddressString()}}" watch-var="wallet"></div>
         <br />
@@ -124,11 +124,11 @@
     <div class="col-sm-8">
       <h4>Add Wallet</h4>
       <div class="form-group">
-        <label> Create a Nickname: </label>
+        <label> Create a Nickname:创建一个昵称： </label>
         <input class="form-control" type="text" placeholder="My Wallet" ng-model="addAccount.nickName" ng-change="newWalletChange('addStatus','showBtnAddWallet')"/>
       </div>
       <div class="form-group" ng-show="showPassTxt">
-        <label> Create a Password: <small>(at least 9 characters)</small></label>
+        <label> Create a Password:创建一个秘密 <small>(at least 9 characters)（至少9位）</small></label>
           <div class="input-group">
             <input type="{{showPass && 'password' || 'text'}}" class="form-control" placeholder="Don't forget to save this!" ng-model="addAccount.password" ng-class="isStrongPass(addAccount.password) ? 'valid' : 'invalid'" ng-change="newWalletChange('addStatus','showBtnAddWallet')"/>
             <span class="input-group-addon eye" ng-click="showPass=!showPass"></span>
