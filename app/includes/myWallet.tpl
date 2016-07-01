@@ -1,17 +1,17 @@
 <section class="tab-pane active" ng-if="globalService.currentTab==globalService.tabs.myWallet.id" ng-controller='myWalletsCtrl'>
 
-  <h2> Your Wallets </h2>
+  <h2> Your Wallets你的钱包 </h2>
   <table class="table table-striped" id="tblwalletsmain">
     <thead>
       <tr>
         <th></th>
         <th></th>
-        <th>Wallet Nickname</th>
-        <th>Wallet Address</th>
-        <th>Balance</th>
-        <th>Edit</th>
-        <th>View</th>
-        <th>Remove</th>
+        <th>Wallet Nickname钱包别名</th>
+        <th>Wallet Address钱包地址</th>
+        <th>Balance余额</th>
+        <th>Edit编辑</th>
+        <th>View查看</th>
+        <th>Remove移除</th>
       </tr>
     </thead>
     <tbody>
@@ -21,10 +21,10 @@
         <td>{{twallet.nick}}</td>
         <td>{{twallet.addr}}</td>
         <td>
-          <strong class="text-success">{{twallet.balance}} ether</strong><br>
-          <small><span>{{twallet.btc}} BTC</span> &nbsp;&nbsp;
-          <span>$ {{twallet.usd}} USD</span> &nbsp;&nbsp;
-          <span>€ {{twallet.eur}} EUR</span></small>
+          <strong class="text-success">{{twallet.balance}} ether以太币</strong><br>
+          <small><span>{{twallet.btc}} BTC比特币</span> &nbsp;&nbsp;
+          <span>$ {{twallet.usd}} USD美元</span> &nbsp;&nbsp;
+          <span>€ {{twallet.eur}} EUR欧元</span></small>
         </td>
         <td class="text-center"><a class="mainWalletEdit" ng-click="editMWallet($index,'wallet')"><img src="images/icon-edit.svg" title="Edit" /></a></td>
         <td class="text-center"><a class="text-warning mainWalletView" ng-click="viewMWallet($index,'wallet')"><img src="images/icon-view.svg" title="View Wallet Details" /></a></td>
