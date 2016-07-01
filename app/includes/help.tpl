@@ -2,11 +2,11 @@
 <div class="tab-pane active" ng-if="globalService.currentTab==globalService.tabs.help.id">
 
 
-  <h2> Help </h2>
+  <h2> Help 帮助</h2>
   <p>Do you see something missing? Have another question? Get in touch with us and we will not only answer your question, we will update this page to be more useful to people in the future!</p>
 
 
-  <h4>First, a reminder </h4>
+  <h4>First, a reminder 首先是一个提醒</h4>
   <ul>
     <li><strong>Ethereum, MyEtherWallet.com & MyEtherWallet CX, and some of the underlying Javascript libraries we use are under active development.</strong> While we have tested thoroughly & tens of thousands of wallets have been successfully created by people all over the globe, there is always the remote possibility that something unexpected happens that causes your ETH to be lost. While do everything we can to ensure that this does not happen and are available via email/reddit/twitter to assist in every way we can, this possibility still exists. Please do not invest more than you are willing to lose and please be careful. If something were to happen, we are sorry, <strong>but we are not responsible for the lost Ether.</strong></li>
     <li>MyEtherWallet.com & MyEtherWallet CX are not "web wallets". You do not create an account or give us your Ether to hold onto. All data is created on our computer/your browser, not our servers. It's not a website where you put your Ether and we store them for you. We just make it easy for you to save your wallet information in your browser/on your computer. Then we give you a place you to access that information and do stuff with it.</li>
@@ -282,23 +282,23 @@
   <p> Addresses will only show up in a blockchain explorer once the account has activity on it&mdash;for example, once you have transferred some Ether to it. </p>
 
 
-  <h4>14. How do I check the balance of my account? </h4>
-  <p> You can use a blockchain explorer like <a href="https://www.etherchain.org" target="_blank">etherchain.org</a> or <a href="http://etherscan.io/" target="_blank">etherscan.io</a>. Paste your address into the search bar and it will pull up your address and transaction history. For example, here's what our <a href="https://etherchain.org/account/0x7cb57b5a97eabe94205c07890be4c1ad31e486a8" target="_blank">donation account</a> looks like on etherchain.org.</p>
+  <h4>14. How do I check the balance of my account? 我该怎么查看账户余额？</h4>
+  <p> You can use a blockchain explorer like 你可以使用区块浏览器，例如<a href="https://www.etherchain.org" target="_blank">etherchain.org</a> or <a href="http://etherscan.io/" target="_blank">etherscan.io</a>. Paste your address into the search bar and it will pull up your address and transaction history.将你的地址粘贴到搜索框，你将看到你的地址和交易历史。 For example, here's what our <a href="https://etherchain.org/account/0x7cb57b5a97eabe94205c07890be4c1ad31e486a8" target="_blank">donation account</a> looks like on etherchain.org.</p>
 
 
-  <h4>15. Where the hell is my geth wallet file? </h4>
+  <h4>15. Where the hell is my geth wallet file?我的Geth钱包文件在哪里？ </h4>
   <ul>
-    <li>Mac: <code>~/Library/Ethereum/keystore</code></li>
-    <li>Linux: <code>~/.ethereum/keystore</code></li>
-    <li>Windows: <code>%APPDATA%/Ethereum/keystore</code></li>
+    <li>Mac系统: <code>~/Library/Ethereum/keystore</code></li>
+    <li>Linux系统: <code>~/.ethereum/keystore</code></li>
+    <li>Windows系统: <code>%APPDATA%/Ethereum/keystore</code></li>
   </ul>
 
 
-  <h4>16. Where the hell is my Mist wallet file? </h4>
+  <h4>16. Where the hell is my Mist wallet file? 我的Mist钱包文件在哪里？</h4>
   <p> Mist files are typically found in the file locations above, but it's much easier to open Mist, select "Accounts" in the top bar, select "Backup", and select "Accounts". This will open the folder where your files are stored.</p>
 
 
-  <h4>17. Where is my pre-sale wallet file?</h4>
+  <h4>17. Where is my pre-sale wallet file?我参与以太币预售获得钱包文件在哪里？</h4>
   <p> Where ever you saved it. ;) It also was emailed to you, so check there. Look for the file called <code>"ethereum_wallet_backup.json"</code> and select that file. This wallet file will be encrypted with a password that you created during the purchase of the pre-sale.</p>
 
   <hr />
