@@ -2,7 +2,7 @@
 <html lang="en" ng-app="mewApp">
 <head>
   <meta charset="utf-8">
-  <title>MyEtherWallet: Open Source JavaScript Client-Side Ether Wallet</title>
+  <title>MyEtherWallet: Open Source JavaScript Client-Side Ether Wallet MyEtherWallet：开源的JavaScript客户端以太币钱包</title>
   <link rel="canonical" href="https://www.myetherwallet.com" />
   <meta name="description" content="Ether Wallet: Open Source JavaScript Client-Side Ether Wallet">
   <meta name="author" content="">
