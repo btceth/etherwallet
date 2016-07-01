@@ -16,22 +16,22 @@
   </ul>
 
 
-  <h4>0. I'm new. What do I do? </h4>
+  <h4>0. I'm new. What do I do?我是新手，该如何开始？ </h4>
   <p> MyEtherWallet gives you the ability to generate new wallets so you can store your Ether yourself, not on an exchange. This process happens entirely on your computer, not our servers. Therefore, when you generate a new wallet, <strong> you are responsible for safely backing it up</strong>.
   <p> If you just purchased ETH on an exchange and want to hold it safely in your own wallet, or if you are using ShapeShift to exchange another from cryptocurrency, you will need to complete the following steps. These steps are outlined in detail in the questions below. Please read them all in full. </p>
   <p> Do not hesitate to reach out to us if you have any questions. Remember, Ether now holds real monetary value and can be a significant investment. If you do not save your private key & password, there is no way to recover access to your wallet or the funds it holds.  I do not say this to scare you, only to remind you to be diligent, read carefully, and take your time during all the steps. But, if you follow the instructions found on this page, even a non-technical person can safely hold their Ether in a wallet they control. </p>
   <ol>
-    <li> Create a new wallet. </li>
-    <li> Back the wallet up.</li>
-    <li> Verify you have access to this new wallet and have correctly saved all necessary information. </li>
-    <li> Transfer Ether to this new wallet. </li>
+    <li> Create a new wallet. 创建一个新钱包。</li>
+    <li> Back the wallet up.备份这个钱包。</li>
+    <li> Verify you have access to this new wallet and have correctly saved all necessary information. 确认你能够使用这个新钱包，并正确地保存所有必要信息。</li>
+    <li> Transfer Ether to this new wallet.向这个新钱包发送以太币。 </li>
   </ol>
 
 
-  <h4>1. How do I create a new wallet? </h4>
+  <h4>1. How do I create a new wallet? 如何创建新钱包？</h4>
   <ol>
-    @@if (site === 'mew' ) {   <li> Go to the "Generate Wallet" tab.</li>    }
-    @@if (site === 'cx' ) {   <li> Go to the "Add Wallet" tab.</li> <li> Select "Generate New Wallet" </li>   }
+    @@if (site === 'mew' ) {   <li> Go to the "Generate Wallet" tab.点击“生成钱包”按钮。</li>    }
+    @@if (site === 'cx' ) {   <li> Go to the "Add Wallet" tab.点击“添加钱包”按钮。</li> <li> Select "Generate New Wallet" 选择“生成新钱包”。</li>   }
     <li> Create a strong password, preferably using a random password generator. Save this somewhere safe. <em><small>The password encrypts the private key for this wallet. You will need this password to send transactions.</small></em></li>
     <li> Copy the password from where you have saved it and paste it into the "Enter a password" field. </li>
     <li> Click "GENERATE". </li>
@@ -80,7 +80,7 @@
   }
 
 
-  <h4>3. How do I verify I have access to my new wallet?</h4>
+  <h4>3. How do I verify I have access to my new wallet?如何确认我能够使用新钱包？</h4>
   <p> <strong> Before you send any Ether to your new wallet</strong>, you should ensure you have access to it. You should NOT copy and paste from the generate wallet tab, but instead copy and paste from the text document or paper where you have stored your wallet information.</p>
   <ol>
     @@if (site === 'mew' ) {   <li> Navigate to the "Send Transaction" tab. </li>    }
@@ -179,7 +179,7 @@
   }
 
   @@if (site === 'mew' ) {
-  <h4>6. What happens if your site goes down? </h4>
+  <h4>6. What happens if your site goes down?如果你们的网站关闭，我的钱包还能用吗？ </h4>
   <p>There seems to be a lot of confusion about what MyEtherWallet does. It's not a web wallet where you put your Ether and we store them for you. You don't have a login and nothing ever gets saved to our servers. It is simply an interface that allows you to do things you normally would do via command line.</p>
   <p>If MyEtherWallet goes down, you would have to find another way (like geth or Ethereum Wallet / Mist) to do what we are doing. But you wouldn't have to "get" your ether out of MyEtherWallet because it's not in MyEtherWallet. It's in whatever wallet your generated via our site.</p>
   <p> You can import your unencrypted private key and your Geth/Mist Format (encrypted) files directly into geth / Ethereum Wallet / Mist very easily now. See question #10 below. </p>
