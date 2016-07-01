@@ -40,7 +40,7 @@
   </ol>
 
 
-  <h4>2a. How do I save/backup my wallet?</h4>
+  <h4>2a. How do I save/backup my wallet?如何保存/备份钱包？</h4>
   <p> You should always back up your wallet externally - like on a flash drive, in cloud storage (Dropbox, etc), and/or a piece of paper.</p>
   <ol>
     <li> Save the address. You can keep it to yourself or share it with others. That way, others can transfer ether to you. You may know this as your account # or public key.</li>
@@ -94,7 +94,7 @@
 
 
   @@if (site === 'mew' ) {
-  <h4>4. How do I send Ether from one wallet to another? </h4>
+  <h4>4. How do I send Ether from one wallet to another? 如何从将以太币从一个钱包发送到另一个钱包？</h4>
   <p> Once you have saved and backed up all information <strong> and </strong> verified you have access to your new wallet, you can transfer some Ether to that new wallet.</p>
   <p><strong>Before you start,</strong> If you plan to move a large amount of ether, you should test sending a small amount first to make sure everything goes smoothly. After making the small transaction, you can check by pasting the TX ID or the address into a blockchain explorer, e.g. <a href="https://www.etherchain.org" target="_blank">https://www.etherchain.org</a>.</p>
   <ol>
@@ -205,8 +205,8 @@
   }
 
 
-  <h4>7. Is using the send transaction offline? </h4>
-  <p> No, the send transaction tab is not offline. It needs the internet in order to send Ether from one wallet to another. However, when you send a transaction, it only sends the signed transaction. Your private key safely stays with you. We also now provide an "Offline Transaction" tab so that you can ensure your private keys are on an offline/airgapped computer at all times.</p>
+  <h4>7. Is using the send transaction offline?默认的发送交易方式是离线发送吗？ </h4>
+  <p> No, the send transaction tab is not offline. 不是，It needs the internet in order to send Ether from one wallet to another. However, when you send a transaction, it only sends the signed transaction. Your private key safely stays with you. We also now provide an "Offline Transaction" tab so that you can ensure your private keys are on an offline/airgapped computer at all times.</p>
 
 
   <h4>8. How do I make an offline transaction?</h4>
@@ -225,19 +225,19 @@
   </ol>
 
 
-  <h4>9. How do I send to a contract?</h4>
+  <h4>9. How do I send to a contract?如何向合约发送交易？</h4>
   <p> Sending to a contract often requires you to include data or additional gas or both. Previously, you had to use the "Offline Transaction" Tab in order to include data and gas with your transaction. Now, you can use the default "Send Transaction" tab to do so.</p>
   <p> Simply navigate to the "Send Transaction" tab, Select your wallet file -or- enter/paste your private key and unlock your wallet, enter a "To Address" and "Amount to Send", and then click the "Advanced Options" button below the amount field. This will display two additional fields that you can use to increase the gas above the default 21000, or add data to your transaction.</p>
 
 
-  <h4>10. How do I import a wallet created with MyEtherWallet into geth / Ethereum Wallet / Mist?</h4>
+  <h4>10. How do I import a wallet created with MyEtherWallet into geth / Ethereum Wallet / Mist?如何将用MyEtherWallet创建的钱包导入到Geth、Mist？</h4>
   @@if (site === 'mew' ) {
   <p><strong> Using your unencrypted private key... </strong></p>
   <ol>
     <li> If you do not already have your unencrypted private key, navigate to the "View Wallet Details" tab.</li>
     <li> Select your wallet file -or- enter/paste your private key to unlock your wallet.</li>
     <li> Copy Your Private Key (unencrypted). </li>
-    <li> If you are on a Mac:</li>
+    <li> If you are on a Mac:如果你使用Mac系统：</li>
       <ul>
         <li> Open Text Edit and paste this private key.</li>
         <li> Go to the menu bar and click "Format" -> "Make Plain Text".</li>
@@ -247,7 +247,7 @@
         <li> Delete the nothing_special_delete_me.txt from your desktop.</li>
         <li> The next time you open the Ethereum Wallet application, your account will be listed under "Accounts". </li>
       </ul>
-    <li> If you are on a PC:</li>
+    <li> If you are on a PC:如果你使用Windows系统</li>
       <ul>
         <li>Open Notepad & paste the private key into notepad.</li>
         <li>Save the file as <code>nothing_special_delete_me.txt</code> at <code>C:\</code></li>
@@ -270,7 +270,7 @@
   </ol>
 
 
-  <h4>11. What does "Gas Limit Too Low" Mean?</h4>
+  <h4>11. What does "Gas Limit Too Low" Mean?gas限制太低是什么意思？</h4>
   <p> Most likely, this means you are attempting to send Ether to a contract. Sending to a contract requires a bit more data and therefore a bit more gas. On the "Send Transaction" tab, click the "Advanced Options" button below the amount field. This will display two additional fields that you can use to increase the gas above the default 21000, or add data to your transaction. </p>
 
 
@@ -295,7 +295,7 @@
 
 
   <h4>16. Where the hell is my Mist wallet file? 我的Mist钱包文件在哪里？</h4>
-  <p> Mist files are typically found in the file locations above, but it's much easier to open Mist, select "Accounts" in the top bar, select "Backup", and select "Accounts". This will open the folder where your files are stored.</p>
+  <p> Mist files are typically found in the file locations above, but it's much easier to open Mist, select "Accounts" in the top bar, select "Backup", and select "Accounts". Mist钱包文件所在位置和Geth钱包文件位置是一样的，但是更加容易找到Mist钱包文件，在Mist界面选择“账户”，选择“备份”，选择“账户”。This will open the folder where your files are stored.这样就可以打开保存钱包文件的文件夹。</p>
 
 
   <h4>17. Where is my pre-sale wallet file?我参与以太币预售获得钱包文件在哪里？</h4>
