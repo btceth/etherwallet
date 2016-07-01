@@ -8,11 +8,11 @@
     <div class="print-qr-code-1">
       <div id="paperwalletaddqr"></div>
       <!--<img src="images/qrcode_test.png" width="90%;" height="auto" class="pull-left" />-->
-      <p class="print-text" style="padding-top: 25px;">YOUR ADDRESS</p>
+      <p class="print-text" style="padding-top: 25px;">YOUR ADDRESS你的地址</p>
     </div>
     <div class="print-qr-code-2">
       <div id="paperwalletprivqr"></div>
-      <p class="print-text" style="padding-top: 30px;">YOUR PRIVATE KEY</p>
+      <p class="print-text" style="padding-top: 30px;">YOUR PRIVATE KEY你的私钥</p>
     </div>
     <div class="print-notes">
       <img src="images/notes-bg.png" width="90%;" height="auto" class="pull-left" />
@@ -20,12 +20,12 @@
     </div>
     <div class="print-address-container">
       <p>
-        <strong>Your Address:</strong>
+        <strong>Your Address:你的地址：</strong>
         <br />
         <span id="paperwalletadd"></span>
       </p>
       <p>
-        <strong>Your Private Key:</strong>
+        <strong>Your Private Key:你的私钥：</strong>
         <br />
         <span id="paperwalletpriv"></span>
       </p>
