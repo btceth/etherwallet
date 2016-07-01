@@ -118,14 +118,14 @@
   <!-- Step 3 -->
   <section class="row">
     <hr />
-    <h4 class="col-xs-12"> Step 3: Send / Publish Transaction (Online Computer)</h4>
-    <p class="col-xs-12"> Paste the signed transaction from Step 2 here and press the "SEND TRANSACTION" button.</p>
+    <h4 class="col-xs-12"> Step 3: Send / Publish Transaction (Online Computer)第三步：发送/公布交易（联网电脑）</h4>
+    <p class="col-xs-12"> Paste the signed transaction from Step 2 here and press the "SEND TRANSACTION" button.从第二步中的签名交易粘贴到这里，然后点击“发送交易”按钮。</p>
     <div class="form-group col-sm-10">
-      <label> Signed Transaction </label>
+      <label> Signed Transaction签名的交易 </label>
       <textarea class="form-control" placeholder="" rows="3" ng-model="signedTx"></textarea>
     </div>
     <div class="form-group col-sm-10">
-      <a class="btn btn-info" ng-click="confirmSendTx()">SEND TRANSACTION</a>
+      <a class="btn btn-info" ng-click="confirmSendTx()">SEND TRANSACTION发送交易</a>
     </div>
     <div ng-bind-html="offlineTxPublishStatus"></div>
   </section>
